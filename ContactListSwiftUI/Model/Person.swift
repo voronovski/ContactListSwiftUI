@@ -20,9 +20,9 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        let shuffledFirstNames = DataStore.shared.firstNames.shuffled()
-        let shuffledLastNames = DataStore.shared.lastNames.shuffled()
-        let shuffledPhones = DataStore.shared.phones.shuffled()
+        let shuffledFirstNames = DataManager.shared.firstNames.shuffled()
+        let shuffledLastNames = DataManager.shared.lastNames.shuffled()
+        let shuffledPhones = DataManager.shared.phones.shuffled()
         
         let iterationCount = min(
             shuffledFirstNames.count,

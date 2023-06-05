@@ -1,13 +1,13 @@
 //
-//  DataStore.swift
+//  DataManager.swift
 //  ContactList
 //
 //  Created by Aleksei Voronovskii on 1/9/23.
 //
 
-final class DataStore {
+final class DataManager {
     
-    static let shared = DataStore()
+    static let shared = DataManager()
     
     let firstNames = ["Mortie", "Elinore", "Katalina", "Mellicent", "Hailey", "Marcelline", "Daisy", "Cami", "Gawain", "Tyrone", "Daron", "Rice", "Ludvig", "Selma", "Bent", "Maybelle", "Roseann", "Rip", "Fulvia", "Felicle", "Ive", "Tabbi", "Mickey", "Myrtice", "Beryl", "Gilberto", "Carilyn", "Ludvig", "Peyton", "Emyle", "Gilemette", "Arlana", "Carey", "Garrek", "Thia"]
     
