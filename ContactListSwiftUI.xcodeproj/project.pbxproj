@@ -11,10 +11,10 @@
 		FA486F292A2D75F200A8CDE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F282A2D75F200A8CDE0 /* ContentView.swift */; };
 		FA486F2B2A2D75F300A8CDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA486F2A2A2D75F300A8CDE0 /* Assets.xcassets */; };
 		FA486F2E2A2D75F300A8CDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA486F2D2A2D75F300A8CDE0 /* Preview Assets.xcassets */; };
-		FA486F392A2D764F00A8CDE0 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = FA486F352A2D764F00A8CDE0 /* Model */; };
-		FA486F3B2A2D764F00A8CDE0 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = FA486F372A2D764F00A8CDE0 /* Services */; };
 		FA486F3D2A2D7B5400A8CDE0 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F3C2A2D7B5400A8CDE0 /* ContactListView.swift */; };
-		FA486F3F2A2D7D2F00A8CDE0 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F3E2A2D7D2F00A8CDE0 /* ContactDetailsView.swift */; };
+		FA486F3F2A2D7D2F00A8CDE0 /* DetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F3E2A2D7D2F00A8CDE0 /* DetailListView.swift */; };
+		FA486F412A2D84D200A8CDE0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F402A2D84D200A8CDE0 /* Person.swift */; };
+		FA486F432A2D850B00A8CDE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F422A2D850B00A8CDE0 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +23,10 @@
 		FA486F282A2D75F200A8CDE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA486F2A2A2D75F300A8CDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA486F2D2A2D75F300A8CDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FA486F352A2D764F00A8CDE0 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
-		FA486F372A2D764F00A8CDE0 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
 		FA486F3C2A2D7B5400A8CDE0 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
-		FA486F3E2A2D7D2F00A8CDE0 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
+		FA486F3E2A2D7D2F00A8CDE0 /* DetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListView.swift; sourceTree = "<group>"; };
+		FA486F402A2D84D200A8CDE0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA486F422A2D850B00A8CDE0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +59,12 @@
 		FA486F252A2D75F200A8CDE0 /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FA486F352A2D764F00A8CDE0 /* Model */,
-				FA486F372A2D764F00A8CDE0 /* Services */,
+				FA486F442A2D856F00A8CDE0 /* Model */,
+				FA486F452A2D858200A8CDE0 /* Services */,
 				FA486F262A2D75F200A8CDE0 /* ContactListSwiftUIApp.swift */,
 				FA486F282A2D75F200A8CDE0 /* ContentView.swift */,
-				FA486F3E2A2D7D2F00A8CDE0 /* ContactDetailsView.swift */,
 				FA486F3C2A2D7B5400A8CDE0 /* ContactListView.swift */,
+				FA486F3E2A2D7D2F00A8CDE0 /* DetailListView.swift */,
 				FA486F2A2A2D75F300A8CDE0 /* Assets.xcassets */,
 				FA486F2C2A2D75F300A8CDE0 /* Preview Content */,
 			);
@@ -77,6 +77,22 @@
 				FA486F2D2A2D75F300A8CDE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA486F442A2D856F00A8CDE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA486F402A2D84D200A8CDE0 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA486F452A2D858200A8CDE0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA486F422A2D850B00A8CDE0 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA486F3B2A2D764F00A8CDE0 /* Services in Resources */,
-				FA486F392A2D764F00A8CDE0 /* Model in Resources */,
 				FA486F2E2A2D75F300A8CDE0 /* Preview Assets.xcassets in Resources */,
 				FA486F2B2A2D75F300A8CDE0 /* Assets.xcassets in Resources */,
 			);
@@ -151,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA486F3F2A2D7D2F00A8CDE0 /* ContactDetailsView.swift in Sources */,
+				FA486F412A2D84D200A8CDE0 /* Person.swift in Sources */,
+				FA486F432A2D850B00A8CDE0 /* DataManager.swift in Sources */,
+				FA486F3F2A2D7D2F00A8CDE0 /* DetailListView.swift in Sources */,
 				FA486F3D2A2D7B5400A8CDE0 /* ContactListView.swift in Sources */,
 				FA486F292A2D75F200A8CDE0 /* ContentView.swift in Sources */,
 				FA486F272A2D75F200A8CDE0 /* ContactListSwiftUIApp.swift in Sources */,

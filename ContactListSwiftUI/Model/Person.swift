@@ -1,11 +1,12 @@
 //
 //  Person.swift
-//  ContactList
+//  ContactListSwiftUI
 //
-//  Created by Aleksei Voronovskii on 1/9/23.
+//  Created by Aleksei Voronovskii on 6/4/23.
 //
 
-struct Person {
+struct Person: Hashable {
+    
     let firstName: String
     let lastName: String
     let phone: String
