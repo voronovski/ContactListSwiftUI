@@ -15,6 +15,7 @@
 		FA486F3F2A2D7D2F00A8CDE0 /* DetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F3E2A2D7D2F00A8CDE0 /* DetailListView.swift */; };
 		FA486F412A2D84D200A8CDE0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F402A2D84D200A8CDE0 /* Person.swift */; };
 		FA486F432A2D850B00A8CDE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F422A2D850B00A8CDE0 /* DataManager.swift */; };
+		FA486F472A2D93CB00A8CDE0 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA486F462A2D93CB00A8CDE0 /* ContactDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FA486F3E2A2D7D2F00A8CDE0 /* DetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListView.swift; sourceTree = "<group>"; };
 		FA486F402A2D84D200A8CDE0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FA486F422A2D850B00A8CDE0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FA486F462A2D93CB00A8CDE0 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				FA486F262A2D75F200A8CDE0 /* ContactListSwiftUIApp.swift */,
 				FA486F282A2D75F200A8CDE0 /* ContentView.swift */,
 				FA486F3C2A2D7B5400A8CDE0 /* ContactListView.swift */,
+				FA486F462A2D93CB00A8CDE0 /* ContactDetailView.swift */,
 				FA486F3E2A2D7D2F00A8CDE0 /* DetailListView.swift */,
 				FA486F2A2A2D75F300A8CDE0 /* Assets.xcassets */,
 				FA486F2C2A2D75F300A8CDE0 /* Preview Content */,
@@ -167,6 +170,7 @@
 			files = (
 				FA486F412A2D84D200A8CDE0 /* Person.swift in Sources */,
 				FA486F432A2D850B00A8CDE0 /* DataManager.swift in Sources */,
+				FA486F472A2D93CB00A8CDE0 /* ContactDetailView.swift in Sources */,
 				FA486F3F2A2D7D2F00A8CDE0 /* DetailListView.swift in Sources */,
 				FA486F3D2A2D7B5400A8CDE0 /* ContactListView.swift in Sources */,
 				FA486F292A2D75F200A8CDE0 /* ContentView.swift in Sources */,
