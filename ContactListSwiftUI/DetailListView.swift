@@ -11,9 +11,29 @@ struct DetailListView: View {
     var persons: [Person]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(persons, id: \.self) { person in
+                Section {
+                    HStack {
+                        Image(systemName: "phone")
+                            .foregroundColor(Color.blue)
+                        Text(person.phone)
+                    }
+                    HStack {
+                        Image(systemName: "at")
+                            .foregroundColor(Color.blue)
+                        Text(person.email)
+                    } 
+                } header: {
+                    Text(person.name)
+                }
+            }
+            .navigationTitle("Contact List")
+            .listStyle(.plain)
+        }
     }
 }
+
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
