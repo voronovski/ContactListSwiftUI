@@ -14,19 +14,12 @@ struct DetailListView: View {
         NavigationStack {
             List(persons, id: \.self) { person in
                 Section {
-                    HStack {
-                        Image(systemName: "phone")
-                            .foregroundColor(Color.blue)
-                        Text(person.phone)
-                    }
-                    HStack {
-                        Image(systemName: "at")
-                            .foregroundColor(Color.blue)
-                        Text(person.email)
-                    } 
+                    Label(person.phone, systemImage: "phone")
+                    Label(person.email, systemImage: "at")
                 } header: {
-                    Text(person.name)
+                    Text(person.name).font(.headline)
                 }
+                
             }
             .navigationTitle("Contact List")
             .listStyle(.plain)
